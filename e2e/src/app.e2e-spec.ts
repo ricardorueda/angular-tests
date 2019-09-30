@@ -14,11 +14,7 @@ describe('workspace-project App', () => {
     expect(page.getTitleText()).toEqual('Home');
   });
 
-  it('should display footer message', () => {
-    page.navigateTo();
-    console.log(page.getTitleText());
-    expect(page.getFooterText()).toEqual('footer works!');
-  });
+
 
   afterEach(async () => {
     // Assert that there are no errors emitted from the browser
