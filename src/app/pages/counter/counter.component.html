@@ -1,0 +1,11 @@
+<main>
+  <div>
+    Counter <span *ngIf="name" class="name">{{name}}</span> is at {{ counter }}.
+    <a [routerLink]="['/home']" class="home-link">Go home</a>
+  </div>
+  <div>
+    <button (click)="increment()" class="button-up">increment></button>
+    <button (click)="decrement()" class="button-down">increment</button>
+    <button (click)="reset()" class="button-0">reset</button>
+  </div>
+</main>
