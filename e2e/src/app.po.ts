@@ -6,6 +6,10 @@ export class AppPage {
   }
 
   getTitleText() {
-    return element(by.css('app-root .content span')).getText() as Promise<string>;
+    return element(by.css('app-root .home-link')).getText() as Promise<string>;
+  }
+
+  getFooterText() {
+    return element(by.id('footer')).getText() as Promise<string>;
   }
 }

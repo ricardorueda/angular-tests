@@ -10,7 +10,14 @@ describe('workspace-project App', () => {
 
   it('should display welcome message', () => {
     page.navigateTo();
-    expect(page.getTitleText()).toEqual('angular-tests app is running!');
+    console.log(page.getTitleText());
+    expect(page.getTitleText()).toEqual('Home');
+  });
+
+  it('should display footer message', () => {
+    page.navigateTo();
+    console.log(page.getTitleText());
+    expect(page.getFooterText()).toEqual('footer works!');
   });
 
   afterEach(async () => {
